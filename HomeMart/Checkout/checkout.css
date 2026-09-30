@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    padding: 20px;
+    background: #f4f4f4;
+}
+a {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #007bff;
+}
+.checkout-wrap {
+    display: flex;
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.order-summary, .payment-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 300px;
+}
+.order-summary h2, .payment-section h2 {
+    margin-bottom: 15px;
+}
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+.order-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.order-item .item-name {
+    flex: 1;
+    margin: 0 10px;
+    font-size: 14px;
+}
+#orderTotal {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+}
+.method-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.method-options label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+.method-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.method-fields .row {
+    display: flex;
+    gap: 10px;
+}
+.method-fields input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+#placeOrderBtn {
+    width: 100%;
+    padding: 12px;
+    background: #F43F5E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#placeOrderBtn:hover {
+    background: #d8324c;
+}
+#orderConfirmation {
+    margin-top: 15px;
+    font-weight: bold;
+    color: green;
+}

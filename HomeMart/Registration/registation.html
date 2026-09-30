@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Mart - Register</title>
+    <link rel="stylesheet" href="./registation.css">
+</head>
+<body>
+     <div class="form-container">
+       <h3>Create Account</h3>
+       <p>Please fill in your details</p>
+
+       <form id="formcontainer">
+          Name <input type="text" placeholder="Full Name" id="name" required>
+          Email <input type="email" placeholder="Email" id="email" required>
+          Password <input type="password" placeholder="Password" id="password" required>
+          Confirm Password <input type="password" placeholder="Confirm Password" id="confirmpassword" required>
+          Mobile <input type="number" name="number" id="number" placeholder="Number" required>
+
+          <button type="submit">Register</button>
+
+          <center><h5>Already have an account? <a href="../Login/login.html">Sign in</a></h5></center>
+
+          <p id="pagecopy">&copy; <span id="year"></span> Home Mart. All Rights Reserved.</p>
+       </form>
+   </div>
+   <script src="./registation.js"></script>
+</body>
+</html>

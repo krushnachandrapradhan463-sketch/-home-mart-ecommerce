@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Mart - Checkout</title>
+    <link rel="stylesheet" href="./checkout.css">
+</head>
+<body>
+    <a href="../Cart/cart.html">&larr; Back to Cart</a>
+
+    <div class="checkout-wrap">
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <div id="orderItems"></div>
+            <div id="orderTotal"></div>
+        </div>
+
+        <div class="payment-section">
+            <h2>Payment Method</h2>
+            <form id="paymentForm">
+                <div class="method-options">
+                    <label>
+                        <input type="radio" name="paymentMethod" value="card" checked>
+                        Credit / Debit Card
+                    </label>
+                    <label>
+                        <input type="radio" name="paymentMethod" value="upi">
+                        UPI
+                    </label>
+                    <label>
+                        <input type="radio" name="paymentMethod" value="cod">
+                        Cash on Delivery
+                    </label>
+                </div>
+
+                <div id="cardFields" class="method-fields">
+                    <input type="text" id="cardName" placeholder="Name on Card" autocomplete="cc-name">
+                    <input type="text" id="cardNumber" placeholder="Card Number (16 digits)" maxlength="19" autocomplete="cc-number">
+                    <div class="row">
+                        <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="5" autocomplete="cc-exp">
+                        <input type="text" id="cardCvv" placeholder="CVV" maxlength="3" autocomplete="cc-csc">
+                    </div>
+                </div>
+
+                <div id="upiFields" class="method-fields" style="display:none;">
+                    <input type="text" id="upiId" placeholder="yourname@upi">
+                </div>
+
+                <div id="codFields" class="method-fields" style="display:none;">
+                    <p>Pay in cash when your order is delivered.</p>
+                </div>
+
+                <button type="submit" id="placeOrderBtn">Place Order</button>
+            </form>
+
+            <div id="orderConfirmation"></div>
+        </div>
+    </div>
+
+    <script src="./checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+a {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #007bff;
+}
+.prod-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+.prod-info img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+.prod-info button {
+    padding: 8px 15px;
+    background: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#totalPrice {
+    margin-top: 20px;
+}
+#buyBtn {
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #F43F5E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#buyBtn:hover {
+    background: #d8324c;
+}
